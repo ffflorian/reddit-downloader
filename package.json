@@ -4,13 +4,18 @@
     "my-cli": "dist/cli.js"
   },
   "dependencies": {
+    "commander": "3.0.1",
+    "fs-extra": "8.1.0",
+    "logdown": "3.2.8",
+    "reddit-wrapper-v2": "1.1.6"
   },
-  "description": "A boilerplate for a modern™ TypeScript project.",
+  "description": "Download posts or content from Reddit.",
   "devDependencies": {
     "@ffflorian/prettier-config": "0.0.5",
     "@ffflorian/tslint-config": "0.5.0",
     "@semantic-release/changelog": "3.0.4",
     "@semantic-release/git": "7.0.16",
+    "@types/fs-extra": "8.0.0",
     "@types/jasmine": "3.4.0",
     "@types/node": "~12",
     "husky": "3.0.4",
@@ -41,7 +46,7 @@
     }
   },
   "license": "MIT",
-  "lint-staged":{
+  "lint-staged": {
     "*.{json,md,yml}": [
       "prettier --write",
       "git add"
@@ -56,10 +61,10 @@
     ]
   },
   "main": "dist/index.js",
-  "name": "@ffflorian/ts-boilerplate",
+  "name": "reddit-downloader",
   "prettier": "@ffflorian/prettier-config",
   "private": true,
-  "repository": "https://github.com/ffflorian/ts-boilerplate.git",
+  "repository": "https://github.com/ffflorian/reddit-downloader.git",
   "scripts": {
     "build": "tsc",
     "clean": "rimraf dist",

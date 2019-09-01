@@ -1,14 +1,28 @@
-# ts-boilerplate [![Build Status](https://action-badges.now.sh/ffflorian/ts-boilerplate)](https://github.com/ffflorian/ts-boilerplate/actions/) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=ffflorian/ts-boilerplate)](https://dependabot.com)
+# reddit-downloader [![Build Status](https://action-badges.now.sh/ffflorian/reddit-downloader)](https://github.com/ffflorian/reddit-downloader/actions/) [![npm version](https://img.shields.io/npm/v/@ffflorian/reddit-downloader.svg?style=flat)](https://www.npmjs.com/package/@ffflorian/reddit-downloader) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=ffflorian/reddit-downloader)](https://dependabot.com)
 
-A boilerplate for a modern™ TypeScript project.
+Open a GitHub repository in your browser.
 
 ## Installation
 
-Fork this repository or just [generate a new one](https://github.com/ffflorian/ts-boilerplate/generate) from this template.
+Run `yarn global add reddit-downloader` or `npm install -g reddit-downloader`.
 
 ## Usage
 
-- Clone your new repository
-- Run `yarn` in the new repository
-- Start coding
-- Don't forget to update the `package.json`!
+```
+Usage: gh-open [options] [directory]
+
+Open a GitHub repository in your browser. Opens pull requests by default.
+
+Options:
+  -p, --print    Just print the URL
+  -t, --tree     Open the branch tree (and not the PR)
+  -v, --version  output the version number
+  -h, --help     output usage information
+```
+
+## Test
+
+```
+yarn
+yarn test
+```
